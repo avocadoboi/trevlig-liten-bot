@@ -1,0 +1,30 @@
+[package]
+name = "nice_little_bot"
+version = "0.1.0"
+authors = ["Björn Sundin <bjornsundin02@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+reqwest = "0.11.2"
+percent-encoding = "2.1.0"
+regex = "1.4.5"
+rand = "0.8.3"
+anyhow = "1.0.39"
+
+[dependencies.serenity]
+default-features = false
+version = "0.10.4"
+features = [
+    "builder", 
+    "cache", 
+    "client", 
+    "gateway", 
+    "http", 
+    "model", 
+    "utils", 
+    "rustls_backend"
+]
+
