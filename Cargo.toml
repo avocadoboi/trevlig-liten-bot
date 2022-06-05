@@ -13,6 +13,9 @@ percent-encoding = "2.1.0"
 regex = "1.4.5"
 rand = "0.8.3"
 anyhow = "1.0.39"
+serde = "1.0.130"
+serde_json = "1.0.72"
+chrono = "0.4.19"
 
 [dependencies.serenity]
 default-features = false
